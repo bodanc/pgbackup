@@ -15,17 +15,18 @@ usage
 
 pass in a full database url. the storage driver and the destination
 
-s3 example with bucket name:
-
-::
-
-    $ pgbackup postgres://bogdan@example.com:5432/db_one --driver s3 dumpA.sql
-
 local example with local path:
 
 ::
 
     $ pgbackup postgres://bogdan@example.com:5432/db_one --driver local /var/local/db_one/backups/dumpA.sql
+
+
+s3 example with bucket name:
+
+::
+
+    $ pgbackup postgres://bogdan@example.com:5432/db_one --driver s3 dumpA.sql
 
 running tests
 -------------
