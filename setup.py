@@ -13,6 +13,11 @@ setup(
     author_email="bogdan@arrakis.spice",
     packages=find_packages("src"),
     package_dir={"": "src"},
-    install_requirements=[]
+    install_requirements=["boto3"],
+    entry_points={
+        "console_scripts": [
+            "pgbackup=pgbackup.cli:main",
+        ]
+    }
 )
 
